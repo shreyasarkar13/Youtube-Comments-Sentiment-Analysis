@@ -23,9 +23,10 @@ def clean_text(mess):
 
 print(comment['Comment'].head(5).apply(clean_text))
 
+'''
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn import metrics
+from sklearn import metrics 
 
 # Generate counts from text using a vectorizer.  There are other vectorizers available, and lots of options you can set.
 # This performs our step of computing word counts.
@@ -43,4 +44,6 @@ predictions = nb.predict(test_features)
 
 # Compute the error.  It is slightly different from our model because the internals of this process work differently from our implementation.
 fpr, tpr, thresholds = metrics.roc_curve(actual, predictions, pos_label=1)
-print("Multinomial naive bayes AUC: {0}".format(metrics.auc(fpr, tpr)))
+print("Multinomial naive bayes AUC: {0}".format(metrics.auc(fpr, tpr))) 
+
+'''
