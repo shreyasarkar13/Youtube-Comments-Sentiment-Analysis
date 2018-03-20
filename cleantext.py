@@ -11,7 +11,7 @@ len(comments)
 
 import pandas as pd
 
-comment=pd.read_csv("out1.csv",sep='\t',names=['Comment'])
+comment=pd.read_csv("out.csv",sep='\t',names=['Comment'])
 stopwords.words('english')
 dictionary=pd.read_csv("sentiment_dict.csv",sep='\t',names=['Words','Classifier'])
 
